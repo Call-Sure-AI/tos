@@ -4,51 +4,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Service - Callsure AI</title>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/web-app-manifest-192x192.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/assets/favicon/favicon.svg" color="#0b54ba">
+    <meta name="msapplication-TileColor" content="#0b54ba">
+    <meta name="theme-color" content="#ffffff">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 900px;
-            margin: 20px auto;
-            padding: 20px;
-            color: #fff; /* Set text to white */
-            background: linear-gradient(to right, #000000, #0b54ba, #000000); /* Background gradient */
-            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); /* Optional text shadow for better readability */
-        }
-        h1, h2, h3 {
-            color: #fff; /* Set headers to white */
-        }
-        h1 {
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        .important {
-            font-weight: bold;
-        }
-        a {
-          color: #1dbfff; /* Lighter blue for links */
+      body {
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+          line-height: 1.6;
+          max-width: 900px;
+          margin: 0 auto;
+          padding: 40px 20px;
+          color: #fff;
+          background: linear-gradient(to right, #000000, #0b54ba, #000000);
+          text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+      }
+  
+      /* Header styles */
+      .header {
+          display: flex;
+          align-items: flex-start;
+          gap: 30px;
+          margin: 80px 0 40px 0; 
+      }
+      
+      .logo {
+          width: 150px;
+          height: auto;
+          margin-top: 6px;
+      }
+      
+      .logo img {
+          width: 100%;
+          height: auto;
+          display: block;
+      }
+  
+      .title-container {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+      }
+  
+      .title-container h1 {
+          margin: 40px 0 15px 0;
+          padding: 0;
+          text-align: left;
+          border: none;
+          font-size: 2.5em;
+      }
+  
+      .header-line {
+          border: 0;
+          height: 2px;
+          background: #fff;
+          margin: 0;
+          width: 100%;
+      }
+  
+      /* Content styles */
+      h1, h2, h3 {
+          color: #fff;
+          margin-top: 1.5em;
+      }
+  
+      section {
+          margin-bottom: 30px;
+      }
+  
+      ul, ol {
+          padding-left: 1.5em;
+      }
+  
+      li {
+          margin-bottom: 0.5em;
+      }
+  
+      .important {
+          font-weight: bold;
+      }
+  
+      a {
+          color: #1dbfff;
           text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .legal-notice {
-          background: rgba(255, 255, 255, 0.1); /* Semi-transparent background for contrast */
+      }
+  
+      a:hover {
+          text-decoration: underline;
+      }
+  
+      .legal-notice {
+          background: rgba(255, 255, 255, 0.1);
           padding: 15px;
-            border-left: 4px solid #007bff;
-            margin: 20px 0;
-            border-radius: 4px;
-        }
-    </style>
+          border-left: 4px solid #1dbfff;
+          margin: 20px 0;
+          border-radius: 4px;
+      }
+  
+      /* RTL Support */
+      [dir="rtl"] {
+          text-align: right;
+      }
+  
+      [dir="rtl"] .header {
+          flex-direction: row-reverse;
+      }
+  
+      [dir="rtl"] .legal-notice {
+          border-left: none;
+          border-right: 4px solid #1dbfff;
+      }
+  
+      [dir="rtl"] ul, 
+      [dir="rtl"] ol {
+          padding-right: 1.5em;
+          padding-left: 0;
+      }
+  </style>
 </head>
 <body>
-  <h1>Terms of Service</h1>
+<!-- Header HTML -->
+<div class="header">
+  <div class="logo">
+      <img src="/assets/images/fullogo_transparent_nobuffer.webp" alt="Callsure AI Logo">
+  </div>
+  <div class="title-container">
+      <h1>Terms of Service</h1>
+      <hr class="header-line">
+  </div>
+</div>
   <div class="legal-notice">
     <p><strong>Last Updated:</strong> <span id="lastUpdated"></span></p>
     <p>These Terms of Service ("Terms") govern your use of Callsure AI, owned and operated by Callsure AI Inc. By accessing or using our services, you agree to these Terms and all policies referenced herein, our <a href="https://privacy.callsure.ai">Privacy Policy</a>, and our <a href="#">Acceptable Use Policy</a> (collectively, the "Agreement"). This Agreement supersedes all prior agreements and may be updated without notice. Continued use of the Services after updates constitutes acceptance of the new terms. If you do not agree to these Terms, please discontinue use of our services.</p>
